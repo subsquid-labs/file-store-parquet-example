@@ -1,4 +1,4 @@
-# A squid that saves USDC Transfers to Apache Parquet files
+# A squid that saves USDC Transfers to Parquet files
 
 This tiny blockchain indexer scrapes `Transfer` events emitted by the [USDC contract](https://etherscan.io/address/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) and saves the data in a file-based dataset in a local folder `./data`. It is built with the [Subsquid framework](https://subsquid.io), hence the term "squid".
 
