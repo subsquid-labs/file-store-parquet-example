@@ -1,0 +1,37 @@
+{
+    "$schema": "https://cdn.subsquid.io/schemas/commands.json",
+    "commands": {
+      "clean": {
+        "description": "delete all build artifacts",
+        "cmd": ["npx", "--yes", "rimraf", "lib"]
+      },
+      "build": {
+        "description": "Build the squid project",
+        "deps": ["clean"],
+        "cmd": ["tsc"]
+      },
+      "typegen": {
+        "description": "Generate data access classes for an ABI file(s) in the ./abi folder",
+        "cmd": ["squid-evm-typegen", "./src/abi", {"glob": "./abi/*.json"}, "--multicall"]
+      },
+      "process": {
+        "description": "Load .env and start the squid processor",
+        "deps": ["build"],
+        "cmd": ["node", "--require=dotenv/config", "lib/processor.js"]
+      },
+      "process:prod": {
+        "description": "Start the squid processor",
+        "cmd": ["node", "lib/processor.js"],
+        "hidden": true
+      },
+      "check-updates": {
+        "cmd": ["npx", "--yes", "npm-check-updates", "--filter=/subsquid/", "--upgrade"],
+        "hidden": true
+      },
+      "bump": {
+        "description": "Bump @subsquid packages to the latest versions",
+        "deps": ["check-updates"],
+        "cmd": ["npm", "i", "-f"]
+      }
+    }
+  }
