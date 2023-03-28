@@ -4,9 +4,9 @@
   "scripts": {},
   "dependencies": {
     "@subsquid/archive-registry": "^2.1.7",
-    "@subsquid/evm-processor": "^0.3.3",
+    "@subsquid/evm-processor": "^0.4.0",
     "@subsquid/evm-typegen": "2.1.1",
-    "@subsquid/file-store-parquet": "^0.2.3",
+    "@subsquid/file-store-parquet": "^0.5.0",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2"
   },
