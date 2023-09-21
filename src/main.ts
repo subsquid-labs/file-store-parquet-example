@@ -29,6 +29,8 @@ const dbOptions = {
 	chunkSizeMb: 10,
 	// Explicitly keeping the default value of syncIntervalBlocks (infinity).
 	// Make sure to use a finite value here if your output data rate is low!
+	// More details here:
+	// https://docs.subsquid.io/store/file-store/overview/#filesystem-syncs-and-dataset-partitioning
 	syncIntervalBlocks: undefined
 }
 
