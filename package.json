@@ -13,6 +13,6 @@
   "devDependencies": {
     "@types/node": "^20.6.3",
     "typechain": "^8.3.1",
-    "typescript": "~5.2.2"
+    "typescript": "~5.3.0"
   }
 }
