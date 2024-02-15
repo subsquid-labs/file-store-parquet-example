@@ -8,9 +8,7 @@ export const processor = new EvmBatchProcessor()
 	.setBlockRange({
 		from: 6082465
 	})
-	.setDataSource({
-		archive: lookupArchive('eth-mainnet')
-	})
+	.setGateway(lookupArchive('eth-mainnet'))
 	.addLog({
 		address: [USDC_CONTRACT],
 		topic0: [erc20abi.events.Transfer.topic]
