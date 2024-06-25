@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {},
   "dependencies": {
+    "@subsquid/evm-abi": "^0.3.0",
     "@subsquid/evm-processor": "^1.19.1",
     "@subsquid/evm-typegen": "4.2.0",
     "@subsquid/file-store-parquet": "^1.1.1",
