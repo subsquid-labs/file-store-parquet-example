@@ -10,7 +10,7 @@
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@types/node": "^20.14.8",
+    "@types/node": "^22.0.0",
     "typechain": "^8.3.2",
     "typescript": "~5.5.2"
   }
