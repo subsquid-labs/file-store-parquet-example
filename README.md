@@ -9,10 +9,10 @@ Dependencies: NodeJS, [Squid CLI](https://docs.subsquid.io/squid-cli).
 To see it in action, spin up a *processor*, a process that ingests the data from the Ethereum Archive:
 
 ```bash
-$ git clone https://github.com/subsquid-labs/file-store-parquet-example
-$ cd file-store-parquet-example/
-$ npm i
-$ sqd process
+git clone https://github.com/subsquid-labs/file-store-parquet-example
+cd file-store-parquet-example/
+npm i
+sqd process
 ```
 You should see a `./data` folder populated with indexer data appear in a bit:
 ```bash
