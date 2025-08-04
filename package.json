@@ -1,7 +1,9 @@
 {
   "name": "file-store-parquet-example",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "build": "rm -rf lib && tsc"
+  },
   "dependencies": {
     "@subsquid/evm-abi": "^0.3.0",
     "@subsquid/evm-processor": "^1.19.1",
