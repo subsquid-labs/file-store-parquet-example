@@ -6,7 +6,7 @@ The squid uses [`@subsquid/file-store`](https://docs.sqd.dev/en/sdk) and [`@subs
 
 Dependencies: NodeJS, [Squid CLI](https://docs.sqd.dev/en/sdk).
 
-To see it in action, spin up a *processor*, a process that ingests the data from the Ethereum Archive:
+To see it in action, spin up a *processor*, a process that ingests the data from the SQD Network Portal:
 
 ```bash
 git clone https://github.com/subsquid-labs/file-store-parquet-example

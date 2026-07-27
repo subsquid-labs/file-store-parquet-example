@@ -1,5 +1,5 @@
 manifestVersion: subsquid.io/v0.1
-name: file-store-csv-example
+name: file-store-parquet-example
 version: 1
 description: |-
   A squid that indexes USDC Transfer events and saves the resulting data locally
@@ -7,4 +7,4 @@ build:
 
 deploy:
   processor:
-    cmd: [ "node", "lib/processor" ]
+    cmd: [ "node", "lib/main" ]
